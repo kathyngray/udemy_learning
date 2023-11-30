@@ -1,0 +1,28 @@
+/*
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+
+h2 {
+    color: #FAF8F1;
+    background-color: #C58940;
+}
+*/
+.bg-antiquewhite {
+    background-color: antiquewhite;
+}
+
+.main-header {
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+
+.sub-header {
+    color: #FAF8F1;
+    background-color: #C58940;
+}
