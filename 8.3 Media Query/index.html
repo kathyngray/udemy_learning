@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    @media (min-width:319px) and (max-width:480px) {
+      body {
+        background-color: lightsalmon;
+      }
+      .mobileDevices{
+        display: block;
+      }
+      .desktops .laptops .ipads{
+        display:none;
+      }
+    }
+    @media (min-width:481px) and (max-width:1200px) {
+      body {
+        background-color: powderblue;
+      }
+      .ipads{
+        display: block;
+      }
+      .desktops .mobileDevices .laptops{
+        display:none;
+      }
+    }
+    @media (min-width:1201px) and (max-width:1600px) {
+      body {
+        background-color: limegreen;
+      }
+      .laptops {
+        display: block;
+      }
+      .desktops .ipads .mobileDevices{
+        display:none;
+      }
+    }
+    @media (min-width:1601px){
+      body{
+        background-color: seagreen;
+      }
+      .desktops{
+        display: block;
+      }
+      .laptops .ipads .mobileDevices{
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 class="desktops" hidden>Desktops</h1>
+  <h1 class="laptops" hidden>Laptops</h1>
+  <h1 class="ipads" hidden>iPads</h1>
+  <h1 class="mobileDevices" hidden>Mobile Devices</h1>
+
+  
+</body>
+
+</html>

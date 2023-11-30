@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      height: 800px;
+      width: 800px;
+      grid-template-columns: 192.5px 192.5px 192.5px 192.5px;
+      grid-template-rows: 192.5px 192.5px 192.5px 192.5px;
+      background-color: black;
+      gap: 10px;
+    }
+
+    .red {
+      background-color: red;
+      font-size: 15em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .gray1 {
+      background-color: lightgray;
+      grid-column: span 2;
+    }
+
+    .gray2 {
+      background-color: lightgray;
+      grid-row: span 2
+    }
+
+    .gray4 {
+      background-color: lightgray;
+      grid-row: span 2
+    }
+
+    .gray5 {
+      background-color: lightgray;
+    }
+
+    .blue {
+      background-color: blue;
+      font-size: 10em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-row: span 2;
+
+    }
+
+    .yellow {
+      background-color: yellow;
+      font-size: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-row: span 2;
+    }
+
+    .green {
+      background-color: darkgreen;
+      font-size: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red">
+      <div>🐙</div>
+    </div>
+
+    <div class="gray1"></div>
+
+    <div class="blue">
+      <div>🐳</div>
+    </div>
+
+    <div class="gray2"></div>
+
+     <div class="yellow">
+      <div>🐣</div>
+    </div>
+    
+    <div class="gray4"></div>
+    <div class="gray5"></div>
+
+    <div class="green">
+      <div>🦖</div>
+    </div>
+  </div>
+</body>
+
+</html>
